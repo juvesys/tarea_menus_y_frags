@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colonFondo"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    tools:context="android.app.docrom.com.petagram.AcercaDeActivity">
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"></include>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/carduno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/miActionBar"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp"
+        >
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivFotoAcercaDe"
+        android:layout_below="@id/miActionBar"
+        android:src="@drawable/homero"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+    android:id="@+id/carddos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_below="@id/carduno"
+    android:padding="10dp"
+    android:clickable="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+    android:layout_marginBottom="5dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="3dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alan Munguia"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        />
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardtres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/carddos"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desarrollado para el curso Desarrollo de aplicaciones móviles con Android de la Universidad Nacional Autónoma de México en la plataforma Coursera"
+            android:textSize="15dp"
+            android:padding="20dp"
+
+            />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
